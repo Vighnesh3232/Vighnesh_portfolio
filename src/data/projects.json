@@ -3,18 +3,49 @@
     "title": "Sales Performance Analytics Dashboard",
     "description": "Interactive Power BI dashboard integrating SQL & Excel to track KPIs, segments, and trends.",
     "techUsed": "Power BI, SQL, Excel, DAX",
-    "image": { "url": "https://picsum.photos/seed/sales/800/450" }
+    "image": { "url": "https://picsum.photos/seed/sales/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/CustomerData-PowerBI.git" }
   },
   {
-    "title": "Customer Segmentation & Retention",
-    "description": "RFM clustering to identify high-value segments and churn risk.",
-    "techUsed": "Python, Pandas, scikit-learn",
-    "image": { "url": "https://picsum.photos/seed/segments/800/450" }
+    "title": "ETL for Financial Analysis",
+    "description": "End-to-end ETL/ELT pipeline for financial data analytics: ingest, transform, and analyze key metrics.",
+    "techUsed": "Python, Pandas, SQL",
+    "image": { "url": "https://picsum.photos/seed/etl-finance/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/ETL-for-Financial-analysis.git" }
   },
   {
+    "title": "Gym Membership Analysis",
+    "description": "Exploratory analysis of membership, churn, cohorts, and revenue to surface insights and trends.",
+    "techUsed": "Python, Pandas, Tableau",
+    "image": { "url": "https://picsum.photos/seed/gym-analysis/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/Gym-Membership-Analysis.git" }
+  },
+  {
+    "title": "Amazon Cell Phones Data Analysis",
+    "description": "Jupyter Notebook analysis of Amazon cell phone listings—pricing, ratings, reviews, and distributions.",
+    "techUsed": "Python, Pandas, Jupyter",
+    "image": { "url": "https://picsum.photos/seed/amazon-phones/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/Amazon-Cell-Phones-Data-Analysis-.git" }
+  },
+  {
+    "title": "Netflix SQL Project",
+    "description": "SQL queries on the Netflix dataset—content insights, genres, countries, and time-based trends.",
+    "techUsed": "SQL, Tableau",
+    "image": { "url": "https://picsum.photos/seed/netflix-sql/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/Netflix_SQL_Project.git" }
+  }, 
+{
     "title": "Pricing A/B Testing",
     "description": "Designed and analyzed pricing experiments to optimize conversion and margin.",
     "techUsed": "Python, SciPy, Tableau",
     "image": { "url": "https://picsum.photos/seed/abtest/800/450" }
+  },
+  {
+    "title": "End-to-End ELT Pipeline (Financial Analytics)",
+    "description": "ELT pipeline that stages raw data, transforms it into analytics-ready tables, and powers dashboards.",
+    "techUsed": "Python, SQL",
+    "image": { "url": "https://picsum.photos/seed/elt-finance/800/450" },
+    "links": { "github": "https://github.com/Vighnesh3232/End-to-End-ELT-Pipeline-Project-for-Financial-Data-Analytics" }
   }
 ]
+

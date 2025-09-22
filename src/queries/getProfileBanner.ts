@@ -20,7 +20,7 @@
 
 // export async function getProfileBanner(): Promise<ProfileBanner> {
 //   const data = await datoCMSClient.request<{ profilebanner: ProfileBanner }>(GET_PROFILE_BANNER);
-//   console.log("🚀 ~ getProfileBanner ~ data:", data)
+//   console.log(" ~ getProfileBanner ~ data:", data)
 //   return data.profilebanner;
 // }
 import { ProfileBanner } from '../types';

@@ -33,8 +33,8 @@ const Navbar: React.FC = () => {
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-left">
-          <Link to="/" className="navbar-logo">
-            <img src={netflixLogo} alt="Netflix" />
+         <Link to="/" className="navbar-logo">
+            <img src={netflixLogo} alt="Vighnesh Gajula" className="nav-brand" />
           </Link>
           <ul className="navbar-links">
             <li><Link to="/browse">Home</Link></li>
@@ -60,9 +60,9 @@ const Navbar: React.FC = () => {
 
       {/* Sidebar (only visible on mobile) */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <div className="sidebar-logo">
-          <img src={netflixLogo} alt="Netflix Logo" />
-        </div>
+      <div className="sidebar-logo">
+        <img src={netflixLogo} alt="Vighnesh Gajula" className="nav-brand" />
+      </div>
         <ul>
           <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Home</Link></li>
           <li><Link to="/work-experience" onClick={closeSidebar}><FaBriefcase /> Professional</Link></li>

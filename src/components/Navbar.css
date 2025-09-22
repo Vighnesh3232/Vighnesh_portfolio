@@ -10,7 +10,7 @@
   width: 100%;
   top: 0;
   background-image: linear-gradient(180deg, rgb(0 0 1 / 90%) 10%, transparent 100%);
-  padding: 20px;
+  padding: 10px 20px;
   z-index: 3;
   transition: background-color 0.3s ease;
 }
@@ -23,6 +23,10 @@
   display: flex;
   align-items: center;
 }
+
+.nav-brand { height: clamp(56px, 7vw, 110px); width: auto; object-fit: contain; }
+@media (max-width: 768px) { .nav-brand { height: 38px; } }
+
 
 .navbar-logo img {
   height: 30px;
@@ -176,3 +180,26 @@
     justify-content: center;
   }
 }
+
+/* --- OVERRIDE: make the navbar brand bigger --- */
+.navbar-logo .nav-brand {
+  height: 90px !important;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo .nav-brand {
+    height: 42px !important;
+  }
+}
+
+/* (optional) sidebar logo size */
+.sidebar-logo .nav-brand {
+  height: 44px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+
