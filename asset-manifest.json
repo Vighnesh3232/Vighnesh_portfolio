@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Vighnesh_portfolio/static/css/main.e200ec19.css",
+    "main.js": "/Vighnesh_portfolio/static/js/main.128e5532.js",
+    "static/js/453.b0cd7502.chunk.js": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js",
+    "static/media/VighneshImage.jpg": "/Vighnesh_portfolio/static/media/VighneshImage.4b3002ef188aaeab9a10.jpg",
+    "static/media/Hotelcalifornia.jpg": "/Vighnesh_portfolio/static/media/Hotelcalifornia.a1b2e230d97c00441c76.jpg",
+    "static/media/eat_that_frog.jpg": "/Vighnesh_portfolio/static/media/eat_that_frog.813c8f47ac052b6d620c.jpg",
+    "static/media/grey.png": "/Vighnesh_portfolio/static/media/grey.bbfd7fb8e095529e355c.png",
+    "static/media/blue.png": "/Vighnesh_portfolio/static/media/blue.9b293a4a6ef065903a8f.png",
+    "static/media/netflix-sound.mp3": "/Vighnesh_portfolio/static/media/netflix-sound.a13a4aedfb5da5a27f04.mp3",
+    "static/media/yellow.png": "/Vighnesh_portfolio/static/media/yellow.2631c5cf63f02f6bbfbf.png",
+    "static/media/red.png": "/Vighnesh_portfolio/static/media/red.6138d0c52611186c9d03.png",
+    "static/media/VIGHNESH_LOGO1.png": "/Vighnesh_portfolio/static/media/VIGHNESH_LOGO1.fbf74795c5055913ee1e.png",
+    "static/media/chris.jpg": "/Vighnesh_portfolio/static/media/chris.c8b8e648ee695596bdd3.jpg",
+    "static/media/alchemist.jpg": "/Vighnesh_portfolio/static/media/alchemist.9c7b8d90f87afb9eb1f9.jpg",
+    "static/media/atomic_habits.jpg": "/Vighnesh_portfolio/static/media/atomic_habits.1e9739efe6a8eca8240a.jpg",
+    "static/media/guns-n-roses.webp": "/Vighnesh_portfolio/static/media/guns-n-roses.0fc43e1f941a88098915.webp",
+    "static/media/rich_dad_poor_dad.jpg": "/Vighnesh_portfolio/static/media/rich_dad_poor_dad.3e652088b5ec2c6f8709.jpg",
+    "static/media/vennelo_adapilla.jpeg": "/Vighnesh_portfolio/static/media/vennelo_adapilla.967e77b93c4bf3f04209.jpeg",
+    "static/media/vijayaniki_aidu_metlu.jpg": "/Vighnesh_portfolio/static/media/vijayaniki_aidu_metlu.2261ef74787f0c33960a.jpg",
+    "static/media/ac-dc.jpg": "/Vighnesh_portfolio/static/media/ac-dc.44867f491e8e97894eff.jpg",
+    "index.html": "/Vighnesh_portfolio/index.html",
+    "main.e200ec19.css.map": "/Vighnesh_portfolio/static/css/main.e200ec19.css.map",
+    "main.128e5532.js.map": "/Vighnesh_portfolio/static/js/main.128e5532.js.map",
+    "453.b0cd7502.chunk.js.map": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e200ec19.css",
+    "static/js/main.128e5532.js"
+  ]
+}
