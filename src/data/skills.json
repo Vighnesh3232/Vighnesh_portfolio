@@ -1,0 +1,39 @@
+[
+  { "name": "Python", "category": "Programming", "description": "Pandas, NumPy, scikit-learn", "icon": "FaPython" },
+  { "name": "SQL", "category": "Programming", "description": "Joins, window functions, query tuning", "icon": "FaDatabase" },
+  { "name": "R (basic)", "category": "Programming", "description": "dplyr, ggplot2 for exploratory analysis", "icon": "SiR" },
+
+  { "name": "Pandas", "category": "Data Wrangling", "description": "Data cleaning, feature engineering, reshaping", "icon": "SiPandas" },
+  { "name": "NumPy", "category": "Data Wrangling", "description": "Vectorized computation, array ops", "icon": "SiNumpy" },
+
+  { "name": "scikit-learn", "category": "Machine Learning", "description": "Classification, regression, clustering, pipelines", "icon": "SiScikitlearn" },
+  { "name": "TensorFlow (basic)", "category": "Machine Learning", "description": "Neural nets prototyping", "icon": "SiTensorflow" },
+  { "name": "NLP", "category": "Machine Learning", "description": "Tokenization, TF-IDF, sentiment, spaCy", "icon": "FaLanguage" },
+  { "name": "Model evaluation", "category": "Machine Learning", "description": "ROC-AUC, F1, cross-validation", "icon": "FaCheckCircle" },
+
+  { "name": "Power BI", "category": "Visualization", "description": "DAX, KPI dashboards, drill-downs", "icon": "SiPowerbi" },
+  { "name": "Tableau", "category": "Visualization", "description": "Storytelling dashboards, LODs", "icon": "SiTableau" },
+  { "name": "Matplotlib / Plotly", "category": "Visualization", "description": "Static & interactive charts", "icon": "SiPlotly" },
+
+  { "name": "A/B Testing", "category": "Experimentation", "description": "Design, sample size, hypothesis testing", "icon": "FaFlask" },
+
+  { "name": "Apache Airflow", "category": "Data Ops", "description": "DAGs, scheduling, ETL orchestration", "icon": "SiApacheairflow" },
+  { "name": "ETL Pipelines", "category": "Data Ops", "description": "Extract/Transform/Load with Python & SQL", "icon": "FaSitemap" },
+  { "name": "APIs & Webhooks", "category": "Data Ops", "description": "REST, auth, pagination, JSON", "icon": "FaExchangeAlt" },
+
+  { "name": "n8n", "category": "Agentic AI & Automation", "description": "Agents, workflows, error handling", "icon": "SiN8N" },
+  { "name": "Zapier", "category": "Agentic AI & Automation", "description": "No-code automations & integrations", "icon": "SiZapier" },
+  { "name": "Make.com", "category": "Agentic AI & Automation", "description": "Scenarios, routers, data stores", "icon": "SiMake" },
+  { "name": "OpenAI / GPT", "category": "Agentic AI & Automation", "description": "Prompts, tool/function calling, evals", "icon": "SiOpenai" },
+  { "name": "LangChain (basic)", "category": "Agentic AI & Automation", "description": "Chains, tool calling, RAG intro", "icon": "SiLangchain" },
+
+  { "name": "Streamlit", "category": "Apps", "description": "Interactive data apps & demos", "icon": "SiStreamlit" },
+
+  { "name": "Git & GitHub", "category": "Tools", "description": "Branching, PRs, Actions CI", "icon": "FaGithub" },
+  { "name": "Docker", "category": "Tools", "description": "Containerization & reproducibility", "icon": "SiDocker" },
+  { "name": "AWS (basics)", "category": "Cloud", "description": "S3, Lambda (intro)", "icon": "SiAmazonaws" },
+  { "name": "Jira", "category": "Collaboration", "description": "Backlog & sprint boards", "icon": "SiJira" },
+  { "name": "Vercel / Netlify", "category": "Deploy", "description": "Static hosting & CI for demos", "icon": "SiVercel" },
+
+  { "name": "Stakeholder communication", "category": "Soft Skills", "description": "Dashboards, presentations, documentation", "icon": "FaComments" }
+]

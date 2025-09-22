@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Sales Performance Analytics Dashboard",
+    "description": "Interactive Power BI dashboard integrating SQL & Excel to track KPIs, segments, and trends.",
+    "techUsed": "Power BI, SQL, Excel, DAX",
+    "image": { "url": "https://picsum.photos/seed/sales/800/450" }
+  },
+  {
+    "title": "Customer Segmentation & Retention",
+    "description": "RFM clustering to identify high-value segments and churn risk.",
+    "techUsed": "Python, Pandas, scikit-learn",
+    "image": { "url": "https://picsum.photos/seed/segments/800/450" }
+  },
+  {
+    "title": "Pricing A/B Testing",
+    "description": "Designed and analyzed pricing experiments to optimize conversion and margin.",
+    "techUsed": "Python, SciPy, Tableau",
+    "image": { "url": "https://picsum.photos/seed/abtest/800/450" }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Cisco",
+    "timelineType": "work",
+    "title": "Data Analyst — Bengaluru, IN",
+    "techStack": "Python, SQL, Tableau/Power BI",
+    "summaryPoints": [
+      "Automated reporting (-40% manual effort)",
+      "Built pricing/sales analytics used by 20+ stakeholders",
+      "Presented internal chatbot at BU demo day"
+    ],
+    "dateRange": "2022 — 2023"
+  },
+  {
+    "name": "UE, Berlin",
+    "timelineType": "education",
+    "title": "M.Sc. Data Science",
+    "techStack": "ML, Analytics, Automation",
+    "summaryPoints": ["Thesis on AVs & Drones in Last-Mile Delivery (EU)"],
+    "dateRange": "2024 — 2026"
+  }
+]
