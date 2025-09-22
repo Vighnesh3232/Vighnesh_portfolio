@@ -1,123 +1,167 @@
-## 🌟 Vighnesh Gajula's Netflix inspired Portfolio 🌟 - https://VighneshGajula.com/
+# 🌟 Vighnesh Gajula — Netflix-Inspired Data Science Portfolio
 
-Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development. It's designed to be lightweight, customizable, and professional while maintaining an approachable style.
+**Live:** https://Vighnesh3232.github.io/Vighnesh_portfolio
 
-Explore specific subdomains tailored to different tech stacks:
-
-- 🌟 [java.VighneshGajula.com](https://java.VighneshGajula.com/) for Java Spring Boot-related work.
-- 🌟 [node.VighneshGajula.com](https://node.VighneshGajula.com/) for Node.js and backend development.
-- 🌟 [frontend.VighneshGajula.com](https://frontend.VighneshGajula.com/) for frontend development expertise.
-- 🌟 [ror.VighneshGajula.com](https://ror.VighneshGajula.com/) for Ruby on Rails projects.
-
-![Screenshot from 2024-12-08 19-19-06](https://github.com/user-attachments/assets/f8220485-16ec-48cf-8cb2-7853540c5724)
+This is my personal portfolio, styled like Netflix: rows of “tiles” for **ML projects**, **analytics dashboards**, and **agentic-AI/automation** demos. It’s fast, lightweight, and easy to maintain — all content is in simple JSON files.
 
 ---
 
 ## ✨ Features
 
-- 🌍 **Dynamic Content**: Powered by [DatoCMS](https://www.datocms.com) for easy content management.
-- ⚡ **Fast & Responsive**: Built with modern web technologies for seamless performance.
-- 🎨 **Customizable**: Modular and easy to adapt to your own needs.
-- 📈 **Professional Yet Personal**: Highlights projects, skills, and achievements.
-- 🎨 It can support various por
+- 🎬 **Netflix-style UI** — hero banner + horizontal carousels by category  
+- 📊 **Data Science focus** — ML, Analytics, A/B testing, Dashboards, Data Ops  
+- ⚙️ **Agentic-AI & Automation** — n8n, Zapier, Make.com, OpenAI (linked demos)  
+- 🧩 **No CMS** — edit JSON, rebuild, and deploy  
+- ⚡ **Static & fast** — React (CRA) + TypeScript  
+- 🧭 **GitHub Pages-ready** — uses **HashRouter**, so deep links don’t 404
 
 ---
 
-## 🛠️ Tech Stack
+## 🧰 Tech Stack
 
-This portfolio is built with love and:
-
-- ⚛️ **React** (Frontend)
-- ☁️ **AWS S3 & CloudFront** (Hosting and CDN)
-- 🖌️ **Tailwind CSS** (Styling)
-- 🛡️ **DatoCMS** (Content Management)
-- 🧩 **Other Cool Tools**: GitHub Actions
+- **React 18** + **Create React App (react-scripts)**
+- **TypeScript**
+- **React Router v6** (HashRouter)
+- **react-icons**
+- **gh-pages** (deploy to GitHub Pages)
 
 ---
 
-## ⭐ Show Your Support
+## 📁 Project Structure
 
-If you find this project helpful or inspiring, give it a ⭐ on GitHub—it means the world to me! 🌟
+public/
+index.html
+(optional) images/
 
-Happy coding! 💻✨
+src/
+images/ # local images imported in TSX
+data/ # JSON content
+profileBanner.json
+projects.json
+skills.json
+timeline.json
+certifications.json
+contactMe.json
+workPermit.json
+components/ # NavBar, cards, rows, etc.
+pages/ # Browse / Contact / etc.
+queries/ # JSON loaders (getX.ts) – no GraphQL
+NetflixTitle.tsx # splash/intro screen
+index.tsx # uses HashRouter
+App.css / index.css # styles
+
 
 ---
 
-## 📚 Getting Started
+## 🧪 Local Setup
 
-Want to set this up locally? Follow these steps:
+> **Requires Node 18** (recommended).
 
-1. **Clone the Repository**: Copy the repository to your local system.
-2. **Install Dependencies**: Use a package manager to install the required dependencies.
+#bash
+# Windows (PowerShell) with nvm
+nvm install 18.20.3
+nvm use 18.20.3
 
-```bash
-nvm install 18
-nvm use 18
-```
-
-After upgrading Node.js, clear your node_modules and reinstall:
-
-```bash
-rm -rf node_modules
-npm cache clean --force
+# Clone & install
+git clone https://github.com/Vighnesh3232/Vighnesh_portfolio.git
+cd Vighnesh_portfolio
 npm install
-```
 
-3. **Configure Environment Variables**: Create a `.env` file and set up the necessary API keys and configurations.
-4. **Run the Project**: Start the development server.
-
-```bash
+# Run dev server
 npm start
-```
+# Open http://localhost:3000
 
-5. **Visit the Local Server**: Open your browser and navigate to the local server URL.
-   ![alt text](image.png)
 
----
+# Windows PowerShell
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+npm install
 
-## 🤝 Contribution Guidelines
+✍️ Content — Edit These JSON Files
 
-Contributions are welcome and appreciated! 🥳 To contribute:
+src/data/profileBanner.json
+Headline, summary, resume link, LinkedIn, hero image URL
 
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Commit your changes with a descriptive message.
-4. Push your changes to your branch.
-5. Open a Pull Request. 🎉
+src/data/projects.json
+Array of projects: title, description, techUsed, image.url, optional links (GitHub/demo)
 
----
+src/data/skills.json
+Skill name, category, description, optional icon (react-icons key if supported)
 
-## 🐛 Issues and Feature Requests
+src/data/timeline.json
+Work/Education entries with title, summaryPoints[], dateRange
 
-Found a bug? Have a feature in mind? 🤔 Feel free to raise an issue or suggest a feature!
+src/data/certifications.json
+title, issuer, issuedDate, link, optional logo.url
 
-1. Go to the **Issues** tab in the repository.
-2. Click **New Issue**.
-3. Provide a clear description of the bug or feature request.
-4. If applicable, include screenshots or steps to reproduce the issue.
+src/data/contactMe.json
+Profile picture URL (or use a local import), name, title, summary, email, phone, LinkedIn
 
-Your feedback is valuable and helps make this project better for everyone. Thank you for contributing!
+src/data/workPermit.json
+visaStatus, expiryDate, summary, additionalInfo
 
----
+Images:
 
-## 🌟 Acknowledgments
+Keep Picsum placeholders to start, or
 
-- Thanks to [DatoCMS](https://www.datocms.com) for powering the dynamic content.
-- Inspired by countless developers in the open-source community. 💻
-- Special shoutout to all contributors—you rock! 🤘
+Import local files from src/images in components, or
 
----
+Place files in public/images and reference with:
+<img src={`${process.env.PUBLIC_URL}/images/yourfile.png`} />
 
-## 📧 Contact Me
+🚀 Deploy to GitHub Pages
 
-- 💼 [Portfolio Website](https://VighneshGajula.com)
-- 📧 Email: [chintuGajula96@gmail.com](mailto:chintuGajula96@gmail.com)
-- 🔗 [LinkedIn](https://uk.linkedin.com/in/Vighnesh-Gajula-82431161)
+Ensure package.json has:
+{
+  "homepage": "https://Vighnesh3232.github.io/Vighnesh_portfolio",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
 
----
+then
 
-## 📜 License
+# First push to GitHub
+git init
+git add .
+git commit -m "Initial commit: portfolio"
+git branch -M main
+git remote add origin https://github.com/Vighnesh3232/Vighnesh_portfolio.git
+git push -u origin main
 
-This project is licensed under the MIT License. Feel free to use it, modify it, and share it! 🌈
+# Publish to Pages
+npm run deploy
 
----
+GitHub → Repo Settings → Pages → Source: gh-pages branch.
+Live URL: https://Vighnesh3232.github.io/Vighnesh_portfolio
+
+Re-deploy after changes:
+git add . && git commit -m "update" && git push
+npm run deploy
+
+🧩 Notes & Troubleshooting
+
+Routing 404 on refresh? Already handled by HashRouter.
+
+Images missing on Pages?
+Check filename case (Linux servers are case-sensitive).
+Prefer imports from src/images or ${process.env.PUBLIC_URL}/images/....
+
+TypeScript can’t import images? Add src/images.d.ts:
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.webp';
+
+📬 Contact
+
+Portfolio: https://Vighnesh3232.github.io/Vighnesh_portfolio
+
+Email: gajulavighnesh123@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/vighnesh-gajula/
