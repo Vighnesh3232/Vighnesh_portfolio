@@ -1,3 +1,4 @@
+// src/profilePage/ProfileBanner.tsx
 import React, { useEffect, useState } from 'react';
 import './ProfileBanner.css';
 import PlayButton from '../components/PlayButton';
@@ -6,39 +7,41 @@ import { getProfileBanner } from '../queries/getProfileBanner';
 import { ProfileBanner as ProfileBannerType } from '../types';
 
 const ProfileBanner: React.FC = () => {
-
-
   const [bannerData, setBannerData] = useState<ProfileBannerType | null>(null);
 
   useEffect(() => {
-    async function fetchData() {
+    (async () => {
       const data = await getProfileBanner();
       setBannerData(data);
-    }
-    fetchData();
+    })();
   }, []);
 
   if (!bannerData) return <div>Loading...</div>;
 
+  // Build a href that works locally AND on GitHub Pages
+  const buildHref = (url: string) =>
+    url.startsWith('http') ? url : `${process.env.PUBLIC_URL}/${url}`;
+
   const handlePlayClick = () => {
-    window.open(bannerData.resumeLink.url, '_blank');
+    const href = buildHref(bannerData.resumeLink.url);
+    window.open(href, '_blank', 'noopener,noreferrer');
   };
 
-  const handleLinkedinClick = () => { 
-    window.open(bannerData.linkedinLink, '_blank');
-  }
+  const handleLinkedinClick = () => {
+    const href = buildHref(bannerData.linkedinLink);
+    window.open(href, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="profile-banner">
       <div className="banner-content">
-        <h1 className="banner-headline" id='headline'>{bannerData.headline}</h1>
-        <p className="banner-description">
-          {bannerData.profileSummary}
-        </p>
+        <h1 className="banner-headline" id="headline">{bannerData.headline}</h1>
+        <p className="banner-description">{bannerData.profileSummary}</p>
 
-        <div className="banner-buttons">
+        {/* Stop click bubbling so only the buttons handle clicks */}
+        <div className="banner-buttons" onClick={(e) => e.stopPropagation()}>
           <PlayButton onClick={handlePlayClick} label="Resume" />
-          <MoreInfoButton onClick={handleLinkedinClick} label="Linkedin" />
+          <MoreInfoButton onClick={handleLinkedinClick} label="LinkedIn" />
         </div>
       </div>
     </div>
