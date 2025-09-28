@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Vighnesh_portfolio/static/css/main.30952be0.css",
-    "main.js": "/Vighnesh_portfolio/static/js/main.3be0f666.js",
+    "main.js": "/Vighnesh_portfolio/static/js/main.27de3efb.js",
     "static/js/453.b0cd7502.chunk.js": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js",
     "static/media/VighneshImage.jpg": "/Vighnesh_portfolio/static/media/VighneshImage.4b3002ef188aaeab9a10.jpg",
     "static/media/Hotelcalifornia.jpg": "/Vighnesh_portfolio/static/media/Hotelcalifornia.a1b2e230d97c00441c76.jpg",
@@ -22,11 +22,11 @@
     "static/media/ac-dc.jpg": "/Vighnesh_portfolio/static/media/ac-dc.44867f491e8e97894eff.jpg",
     "index.html": "/Vighnesh_portfolio/index.html",
     "main.30952be0.css.map": "/Vighnesh_portfolio/static/css/main.30952be0.css.map",
-    "main.3be0f666.js.map": "/Vighnesh_portfolio/static/js/main.3be0f666.js.map",
+    "main.27de3efb.js.map": "/Vighnesh_portfolio/static/js/main.27de3efb.js.map",
     "453.b0cd7502.chunk.js.map": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30952be0.css",
-    "static/js/main.3be0f666.js"
+    "static/js/main.27de3efb.js"
   ]
 }
