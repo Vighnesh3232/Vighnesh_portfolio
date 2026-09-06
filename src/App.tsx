@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import NetflixTitle from './NetflixTitle';
 import ProfilePage from './profilePage/profilePage';
 import Browse from './browse/browse';
@@ -31,6 +31,7 @@ const App: React.FC = () => {
       <Route path="/reading" element={<Layout><Reading /></Layout>} />
       <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
       <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
+      <Route path="*" element={<Navigate to="/browse" replace />} />
     </Routes>
   );
 };

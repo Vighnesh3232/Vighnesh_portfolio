@@ -48,6 +48,7 @@
 
 .letter {
   display: inline-block;
+  white-space: pre;
   opacity: 0;
   transform: translateY(-20px);
   animation: dropIn 0.5s forwards ease-out;

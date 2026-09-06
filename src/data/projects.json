@@ -33,12 +33,6 @@
     "techUsed": "SQL, Tableau",
     "image": { "url": "https://picsum.photos/seed/netflix-sql/800/450" },
     "links": { "github": "https://github.com/Vighnesh3232/Netflix_SQL_Project.git" }
-  }, 
-{
-    "title": "Pricing A/B Testing",
-    "description": "Designed and analyzed pricing experiments to optimize conversion and margin.",
-    "techUsed": "Python, SciPy, Tableau",
-    "image": { "url": "https://picsum.photos/seed/abtest/800/450" }
   },
   {
     "title": "End-to-End ELT Pipeline (Financial Analytics)",

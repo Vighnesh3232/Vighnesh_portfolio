@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import { HashRouter as Router } from 'react-router-dom';
+import { ProfileProvider } from './context/ProfileContext';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <Router>
-    <App />
+    <ProfileProvider>
+      <App />
+    </ProfileProvider>
   </Router>
 );
 

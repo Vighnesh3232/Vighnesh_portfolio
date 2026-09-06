@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaTools, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'; // Import icons
 import './Navbar.css';
 import netflixLogo from '../images/VIGHNESH_LOGO1.png';
 import blueImage from '../images/blue.png';
+import { useProfile } from '../context/ProfileContext';
 
 const Navbar: React.FC = () => {
-  const location = useLocation();
   const navigate = useNavigate();
+  const { profile } = useProfile();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const profileImage = location.state?.profileImage || blueImage;
+  const profileImage = profile?.image || blueImage;
+  const homeLink = profile ? `/profile/${profile.name}` : '/browse';
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 80);
@@ -37,7 +39,7 @@ const Navbar: React.FC = () => {
             <img src={netflixLogo} alt="Vighnesh Gajula" className="nav-brand" />
           </Link>
           <ul className="navbar-links">
-            <li><Link to="/browse">Home</Link></li>
+            <li><Link to={homeLink}>Home</Link></li>
             <li><Link to="/work-experience">Professional</Link></li>
             <li><Link to="/skills">Skills</Link></li>
             <li><Link to="/projects">Projects</Link></li>
@@ -64,7 +66,7 @@ const Navbar: React.FC = () => {
         <img src={netflixLogo} alt="Vighnesh Gajula" className="nav-brand" />
       </div>
         <ul>
-          <li><Link to="/browse" onClick={closeSidebar}><FaHome /> Home</Link></li>
+          <li><Link to={homeLink} onClick={closeSidebar}><FaHome /> Home</Link></li>
           <li><Link to="/work-experience" onClick={closeSidebar}><FaBriefcase /> Professional</Link></li>
           <li><Link to="/skills" onClick={closeSidebar}><FaTools /> Skills</Link></li>
           <li><Link to="/projects" onClick={closeSidebar}><FaProjectDiagram /> Projects</Link></li>

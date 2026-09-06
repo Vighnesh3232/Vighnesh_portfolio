@@ -5,30 +5,27 @@ import { useNavigate } from 'react-router-dom';
 import logoImage from './images/VIGHNESH_LOGO1.png'; // Update with the path to your logo
 
 const NetflixTitle = () => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const navigate = useNavigate();
 
-  const handlePlaySound = () => {
+  useEffect(() => {
+    setIsAnimating(true);
+
     const audio = new Audio(netflixSound);
     audio.play().catch(error => console.error("Audio play error:", error));
-    setIsClicked(true); // Starts animation after clicking
-  };
 
-  useEffect(() => {
-    if (isClicked) {
-      const timer = setTimeout(() => {
-        navigate('/browse');
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [isClicked, navigate]);
+    const timer = setTimeout(() => {
+      navigate('/browse');
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
-    <div className="netflix-container" onClick={handlePlaySound}>
-      <img 
-        src={logoImage} 
-        alt="Custom Logo" 
-        className={`netflix-logo ${isClicked ? 'animate' : ''}`} 
+    <div className="netflix-container">
+      <img
+        src={logoImage}
+        alt="Custom Logo"
+        className={`netflix-logo ${isAnimating ? 'animate' : ''}`}
       />
     </div>
   );

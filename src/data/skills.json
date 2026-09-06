@@ -31,7 +31,7 @@
 
   { "name": "Git & GitHub", "category": "Tools", "description": "Branching, PRs, Actions CI", "icon": "FaGithub" },
   { "name": "Docker", "category": "Tools", "description": "Containerization & reproducibility", "icon": "SiDocker" },
-  { "name": "AWS (basics)", "category": "Cloud", "description": "S3, Lambda (intro)", "icon": "SiAmazonaws" },
+  { "name": "AWS (basics)", "category": "Cloud", "description": "S3, Lambda (intro)", "icon": "FaAws" },
   { "name": "Jira", "category": "Collaboration", "description": "Backlog & sprint boards", "icon": "SiJira" },
   { "name": "Vercel / Netlify", "category": "Deploy", "description": "Static hosting & CI for demos", "icon": "SiVercel" },
 

@@ -2,28 +2,39 @@ import React, { useEffect, useState } from 'react';
 import './Skills.css';
 import { getSkills } from '../queries/getSkills';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+import { FaReact, FaPython, FaDatabase, FaLanguage, FaCheckCircle, FaFlask, FaSitemap, FaExchangeAlt, FaGithub, FaComments, FaAws } from 'react-icons/fa';
+import { SiR, SiPandas, SiNumpy, SiScikitlearn, SiTensorflow, SiPowerbi, SiTableau, SiPlotly, SiApacheairflow, SiN8N, SiZapier, SiMake, SiOpenai, SiLangchain, SiStreamlit, SiDocker, SiJira, SiVercel } from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
-  SiRubyonrails: <SiRubyonrails />,
-  FaNodeJs: <FaNodeJs />,
-  SiSpringboot: <SiSpringboot />,
-  FaJava: <FaJava />,
-  SiPhp: <SiPhp />,
-  FaReact: <FaReact />,
-  SiTypescript: <SiTypescript />,
+  FaPython: <FaPython />,
+  FaDatabase: <FaDatabase />,
+  SiR: <SiR />,
+  SiPandas: <SiPandas />,
+  SiNumpy: <SiNumpy />,
+  SiScikitlearn: <SiScikitlearn />,
+  SiTensorflow: <SiTensorflow />,
+  FaLanguage: <FaLanguage />,
+  FaCheckCircle: <FaCheckCircle />,
+  SiPowerbi: <SiPowerbi />,
+  SiTableau: <SiTableau />,
+  SiPlotly: <SiPlotly />,
+  FaFlask: <FaFlask />,
+  SiApacheairflow: <SiApacheairflow />,
+  FaSitemap: <FaSitemap />,
+  FaExchangeAlt: <FaExchangeAlt />,
+  SiN8N: <SiN8N />,
+  SiZapier: <SiZapier />,
+  SiMake: <SiMake />,
+  SiOpenai: <SiOpenai />,
+  SiLangchain: <SiLangchain />,
+  SiStreamlit: <SiStreamlit />,
+  FaGithub: <FaGithub />,
+  SiDocker: <SiDocker />,
   FaAws: <FaAws />,
-  FaDocker: <FaDocker />,
-  SiPostgresql: <SiPostgresql />,
-  SiMysql: <SiMysql />,
-  SiKubernetes: <SiKubernetes />,
-  SiGooglecloud: <SiGooglecloud />,
-  SiHeroku: <SiHeroku />,
-  SiNetlify: <SiNetlify />,
-  SiRabbitmq: <SiRabbitmq />,
-  SiImessage: <SiImessage />,
+  SiJira: <SiJira />,
+  SiVercel: <SiVercel />,
+  FaComments: <FaComments />,
 };
 
 
@@ -61,7 +72,7 @@ const Skills: React.FC = () => {
                 <h3 className="skill-name">
                   {skill.name.split('').map((letter: any, i: number) => (
                     <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>
-                      {letter}
+                      {letter === ' ' ? ' ' : letter}
                     </span>
                   ))}
                 </h3>
