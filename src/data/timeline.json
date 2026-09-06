@@ -1,22 +1,36 @@
 [
   {
-    "name": "Cisco",
+    "name": "Cisco Systems",
     "timelineType": "work",
     "title": "Data Analyst — Bengaluru, IN",
-    "techStack": "Python, SQL, Tableau/Power BI",
+    "techStack": "Python, SQL, Power BI, Excel",
     "summaryPoints": [
-      "Automated reporting (-40% manual effort)",
-      "Built pricing/sales analytics used by 20+ stakeholders",
-      "Presented internal chatbot at BU demo day"
+      "Used Python and SQL to analyse operational data, investigate recurring data-quality and performance issues, and support root-cause analysis",
+      "Built and maintained Power BI dashboards and Excel reports for KPI and SLA monitoring, reducing recurring manual reporting effort by approximately 30%",
+      "Supported consistent reporting and operational decision-making for 50+ stakeholders"
     ],
-    "dateRange": "2022 — 2023"
+    "dateRange": "Oct 2022 — Oct 2024"
   },
   {
-    "name": "UE, Berlin",
+    "name": "Bayer AG",
+    "timelineType": "work",
+    "title": "Data Science Intern — Process Design & Optimization",
+    "techStack": "Python, Pandas, Streamlit, Google BigQuery, Excel, Jupyter",
+    "summaryPoints": [
+      "Built and tested a Python-based process data importer that consolidated data from two source systems into a unified pipeline, adding unit, integration, regression, and validation checks",
+      "Automated recurring Python and Pandas ETL workflows to transform, standardize, validate, and load production-planning data from multiple Excel formats into Google BigQuery",
+      "Developed an internal Python and Streamlit application with embedded analytical and business logic for recurring self-service workflows"
+    ],
+    "dateRange": "Feb 2026 — Jul 2026"
+  },
+  {
+    "name": "University of Europe for Applied Sciences, Berlin",
     "timelineType": "education",
     "title": "M.Sc. Data Science",
-    "techStack": "ML, Analytics, Automation",
-    "summaryPoints": ["Thesis on AVs & Drones in Last-Mile Delivery (EU)"],
+    "techStack": "Machine Learning, Data Analytics, Computer Vision, Statistical Analysis",
+    "summaryPoints": [
+      "Thesis: Mitigating Hallucinations in Open-Vocabulary Object Detection via LLM-Guided Attribute Verification"
+    ],
     "dateRange": "2024 — 2026"
   }
 ]
