@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Vighnesh_portfolio/static/css/main.30952be0.css",
-    "main.js": "/Vighnesh_portfolio/static/js/main.6684afdc.js",
+    "main.css": "/Vighnesh_portfolio/static/css/main.30a4d6b7.css",
+    "main.js": "/Vighnesh_portfolio/static/js/main.e0ed491d.js",
     "static/js/453.b0cd7502.chunk.js": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js",
     "static/media/VighneshImage.jpg": "/Vighnesh_portfolio/static/media/VighneshImage.4b3002ef188aaeab9a10.jpg",
     "static/media/Hotelcalifornia.jpg": "/Vighnesh_portfolio/static/media/Hotelcalifornia.a1b2e230d97c00441c76.jpg",
@@ -20,12 +20,12 @@
     "static/media/vijayaniki_aidu_metlu.jpg": "/Vighnesh_portfolio/static/media/vijayaniki_aidu_metlu.2261ef74787f0c33960a.jpg",
     "static/media/ac-dc.jpg": "/Vighnesh_portfolio/static/media/ac-dc.44867f491e8e97894eff.jpg",
     "index.html": "/Vighnesh_portfolio/index.html",
-    "main.30952be0.css.map": "/Vighnesh_portfolio/static/css/main.30952be0.css.map",
-    "main.6684afdc.js.map": "/Vighnesh_portfolio/static/js/main.6684afdc.js.map",
+    "main.30a4d6b7.css.map": "/Vighnesh_portfolio/static/css/main.30a4d6b7.css.map",
+    "main.e0ed491d.js.map": "/Vighnesh_portfolio/static/js/main.e0ed491d.js.map",
     "453.b0cd7502.chunk.js.map": "/Vighnesh_portfolio/static/js/453.b0cd7502.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30952be0.css",
-    "static/js/main.6684afdc.js"
+    "static/css/main.30a4d6b7.css",
+    "static/js/main.e0ed491d.js"
   ]
 }
